@@ -7,14 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> listado de familiares </h1>
-        {% for member in family %}
-        <p>nombre: {{member.name}}</p>
-        <p>apellido: {{member.surname}}</p>
-        <p>edad: {{member.age}}</p>
-        <p>fecha de nacimiento: {{member.birthdate}}</p>
-        <p>DNI: {{member.dni}}</p>
-        <p>esta vivo?: {{member.alive}}</p>
-        {% endfor %}
+<table cellspacing="5" cellpadding="5" border="3">
+    <h1>Listado de familia</h1>
+
+<tr>
+    <td><strong>Nombre</strong></td>
+    <td><strong>Apellido</strong></td>
+    <td><strong>Edad</strong></td>
+    <td><strong>DNI</strong></td>
+    <td><strong>Esta Vivo</strong></td>
+</tr>
+{% for member in family %}
+
+<tr>
+    
+    <td>{{member.name}}</td>
+
+    <td>{{member.surname}}</td>
+
+    <td>{{member.age}}</td>
+
+    <td>{{member.dni}}</td>
+
+    <td>{{member.alive}}</td>
+
+</tr>
+{% endfor %}
+</table>
 </body>
 </html>

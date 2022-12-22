@@ -3,10 +3,16 @@ from django.http import HttpResponse
 from family.models import Family
 # Create your views here.
 
+#? funcion para crear un miembro de la familia
 def create_family_member(request):
-    new_member = Family.objects.create(name = "rodrigo", surname = "trillo", age = 22 , dni= 123455123 , alive = True ) #datetime = año, dia, mes
-    return HttpResponse("se creo el familiar")
+    new_member = Family.objects.create(name = "prueba", surname = "html", age = 24 , dni = 3 , alive = True ) #ingresar los datos del miembro
+    new_member_data = Family.objects.latest('id')
+    context = {
+        "new_member_data" : new_member_data    #intente hacer que te muestre en creacion_family.html el miembro que se creo (no pude jeje)
+    }
+    return render(request, "creacion_family.html", context=context)
 
+#? funcion para crear listar todos los miembros de la familia
 def list_family_members(request):
     all_family_members = Family.objects.all()
     context = {
