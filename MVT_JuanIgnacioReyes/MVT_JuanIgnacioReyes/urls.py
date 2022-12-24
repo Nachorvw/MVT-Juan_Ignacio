@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from family.views import create_family_member, list_family_members
+from computers.views import create_pc, list_pc
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("create-member/", create_family_member),
-    path("list-family/", list_family_members)
+    path("list-family/", list_family_members),
+    path("create-pc/", create_pc),
+    path("list-pc/", list_pc),
 ]

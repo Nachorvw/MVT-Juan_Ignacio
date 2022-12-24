@@ -5,12 +5,9 @@ from family.models import Family
 
 #? funcion para crear un miembro de la familia
 def create_family_member(request):
-    new_member = Family.objects.create(name = "prueba", surname = "html", age = 24 , dni = 3 , alive = True ) #ingresar los datos del miembro
-    new_member_data = Family.objects.latest('id')
-    context = {
-        "new_member_data" : new_member_data    #intente hacer que te muestre en creacion_family.html el miembro que se creo (no pude jeje)
-    }
-    return render(request, "creacion_family.html", context=context)
+    new_member = Family.objects.create(name = "prueba", surname = "html", age = 24 , dni = 5 , alive = True ) #ingresar los datos del miembro
+    #imprimir el nuevo miembro creado en httpresponse
+    return HttpResponse(f"usted creo un familiar: nombre: {new_member.name} - apellido: {new_member.surname} - edad: {new_member.age} - DNI: {new_member.dni} - vive?: {new_member.alive}")
 
 #? funcion para crear listar todos los miembros de la familia
 def list_family_members(request):

@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Listado de PC</h1>
+
+    {% for data in computers %}
+    {{data.serial_num}}
+    {{data.parts}}
+    {{data.usage}}
+    {% endfor %}
 </body>
 </html>
