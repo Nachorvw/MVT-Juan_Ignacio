@@ -89,5 +89,5 @@ Escribir algo que quieran
 ## Desarrolladores del proyecto:
 
 ### BackEnd
-#### | [Juan Ignacio](https://www.linkedin.com/in/juan-ignacio-reyes-314549239/)
- [<img src="https://avatars.githubusercontent.com/u/105290638?v=4](https://github.com/Nachorvw) 
+#### | [Juan Ignacio](https://www.linkedin.com/in/juan-ignacio-reyes-314549239/)|
+ [](https://github.com/Nachorvw) 
