@@ -38,7 +38,7 @@ Here are some ideas to get you started:
 ## *Instalación de proyecto* - Back-End
 ### Cómo ejecutar el proyecto
 - Instalar Python
-- Clonar el proyecto con ``` git clone git@github.com:ematevez/proyecto.git```
+- Clonar el proyecto con ``` git clone git@github.com:Nachorvw/MVT-Juan_Ignacio.git```
 - Crear entorno virtual con `Pipenv` or `virtualenv` and activate it.
 - Instalar los requerimientos
 <!--esto es para escribir codigo el que quieran -->
@@ -89,28 +89,5 @@ Escribir algo que quieran
 ## Desarrolladores del proyecto:
 
 ### BackEnd
-#### | [Emanuel Tevez](https://www.linkedin.com/in/emanuel-juli%C3%A1n-tevez/) | 
- [<img src="https://user-images.githubusercontent.com/22551090/206501284-baa34dc7-8118-4bb1-b7f6-b605ee916bb9.png" width=50><br><sub>Emanuel Tevez</sub>](https://github.com/ematevez) 
-
-
-
-
-
-
-<nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-            <img src="https://i0.wp.com/edtechreviews.net/wp-content/uploads/2021/12/coderhouse_logo.png?resize=750%2C750&ssl=1" width="30" height="30" class="d-inline-block align-top" alt="Logo Coder">
-            Coder MVT
-        </a>
-        <div class="collapse navbar-collapse" id="">
-            <div class="navbar-nav">
-            <a class="nav-item nav-link" href="">Inicio</a>
-            <a class="nav-item nav-link" href="">Crear Miembro</a>
-            <a class="nav-item nav-link" href="">Lista Familiar</a>
-            <a class="nav-item nav-link" href="">Crear Producto</a>
-            <a class="nav-item nav-link" href="">Lista Productos</a>
-            </div>
-        </div>
-
-
-    </nav>
+#### | [Juan Ignacio](https://www.linkedin.com/in/juan-ignacio-reyes-314549239/)
+ [<img src="https://avatars.githubusercontent.com/u/105290638?v=4](https://github.com/Nachorvw) 
