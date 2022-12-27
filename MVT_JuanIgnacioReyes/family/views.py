@@ -9,7 +9,7 @@ def create_family_member(request):
     name = "Juan Ignacio"
     surname = "Reyes"
     age = 24
-    dni = 1234212
+    dni = 12123333
     alive = True
     new_member = Family.objects.create(name = name, surname = surname, age = age , dni = dni, alive = alive ) #ingresar los datos del miembro
     context = { 
