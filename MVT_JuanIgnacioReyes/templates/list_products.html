@@ -9,10 +9,10 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="https://i0.wp.com/edtechreviews.net/wp-content/uploads/2021/12/coderhouse_logo.png?resize=750%2C750&ssl=1" width="30" height="30" class="d-inline-block align-top" alt="Logo Coder">
-        <a class="navbar-brand" href="#">Coder MVT</a>
+            <img src="https://i0.wp.com/edtechreviews.net/wp-content/uploads/2021/12/coderhouse_logo.png?resize=750%2C750&ssl=1" width="30" height="30" class="d-inline-block align-top" alt="Logo Coder">
+            <a class="navbar-brand" href="#">Coder MVT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav text-center">
@@ -26,7 +26,36 @@
     </nav>
 
     <h1>listado productos</h1>
+    
+    
+    <div class="row">
+        <div class="col-sm-6">
+            {% for product in Products %}
+                {% if product.available %}
+                    <div class="card border-dark bg-success mb-3" style="max-width: 18rem;  display: flex;">
+                    <div class="card-header bg-transparent border-dark">{{product.name}}   {{product.cuantity}}u</div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.description}}</h5>
+                        <p class="card-text">precio: {{product.price}}<p>cantidad: {{product.cuantity}}u</p></p>
+                </div>
+                    <div class="card-footer bg-transparent border-dark"><a href="#" class="btn btn-primary">Comprar</a> {{product.price}}$</div>
+                </div>
+                {% endif %}
+                {% if product.available == False%}
+                    <div class="card border-dark bg-danger mb-3 " style="max-width: 18rem;  display: flex;">
+                    <div class="card-header bg-transparent border-dark">{{product.name}}   {{product.cuantity}}u</div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.description}}</h5>
+                        <p class="card-text">precio: {{product.price}}<p>cantidad: {{product.cuantity}}u</p></p>
+                    </div>
+                        <div class="card-footer bg-transparent border-dark"><a href="#" class="btn btn-primary">Comprar</a> {{product.price}}$</div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
 
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

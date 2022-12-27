@@ -5,11 +5,11 @@ from products.models import Products
 #?funcion para crear productos
 def create_products(request):
     #usando variables para una mejor lectura y edicion de los valores
-    name = "Coca Cola"
-    cuantity = 10
-    price = 150
-    available = True
-    description = "Coca Cola 500ml"
+    name = "Sprite"
+    cuantity = 0
+    price = 560
+    available = False
+    description = "Sprite 1.2L"
     new_product = Products.objects.create(name = name, cuantity = cuantity, price = price, available = available, description = description)
     context = {
         "new_product" : new_product 
@@ -20,6 +20,6 @@ def create_products(request):
 def list_products(request):
     all_products = Products.objects.all()
     context = {
-        "Products": all_products,
+       "Products": all_products,
     }
-    return render(request, "list_products.html", context={})
+    return render(request, "list_products.html", context=context)
