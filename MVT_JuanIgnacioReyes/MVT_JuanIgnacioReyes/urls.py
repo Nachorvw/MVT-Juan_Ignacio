@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from MVT_JuanIgnacioReyes.views import index
+from MVT_JuanIgnacioReyes.views import index, compra
 urlpatterns = [
     path("", index, name="index"),
     path('admin/', admin.site.urls),
     path("family/", include("family.urls")),
     path("products/", include("products.urls")),
+    path("compra/", compra)
 ]
