@@ -6,11 +6,11 @@ from family.models import Family
 #? funcion para crear un miembro de la familia
 def create_family_member(request):
     #usando variables para una mejor lectura y edicion de los valores
-    name = "Juan Ignacio"
-    surname = "Reyes"
-    age = 24
-    dni = 12123333
-    alive = True
+    name = "benjamin"
+    surname = "donsanti"
+    age = 78
+    dni = 4 #dni unique = True, hay que poner un dni distinto cada vez para que funcione
+    alive = False
     new_member = Family.objects.create(name = name, surname = surname, age = age , dni = dni, alive = alive ) #ingresar los datos del miembro
     context = { 
         "new_member" : new_member

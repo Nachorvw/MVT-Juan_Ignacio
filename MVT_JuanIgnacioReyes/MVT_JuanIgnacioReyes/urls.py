@@ -19,7 +19,7 @@ from MVT_JuanIgnacioReyes.views import index, compra
 urlpatterns = [
     path("", index, name="index"),
     path('admin/', admin.site.urls),
-    path("family/", include("family.urls")),
-    path("products/", include("products.urls")),
+    path("family/", include("family.urls")), #urls en app family 
+    path("products/", include("products.urls")), #urls en app products
     path("compra/", compra)
 ]

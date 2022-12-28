@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crear_P</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <img src="https://i0.wp.com/edtechreviews.net/wp-content/uploads/2021/12/coderhouse_logo.png?resize=750%2C750&ssl=1" width="30" height="30" class="d-inline-block align-top" alt="Logo Coder">
-        <a class="navbar-brand" href="#">Coder MVT</a>
+        <a class="navbar-brand" href="/">Coder MVT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,10 +25,11 @@
         </div>
     </nav>
 
-    <h1>creacion de miembro</h1>
+    <h1>creacion de Producto</h1>
 
     <h2>Nombre: <span class="badge badge-success">{{new_product.name}}</h2>
     <h2>Precio: <span class="badge badge-success">{{new_product.price}}$</span></h2>
+    <!--este if es para cambiar el color de verde a rojo dependiendo si hay stock o no-->
     {% if new_product.available %}
         <h2>Disponible: <span class="badge badge-success">{{new_product.available}}</span></h2>
     {% endif %}
