@@ -8,3 +8,6 @@ class Family(models.Model):
     age = models.IntegerField()
     dni = models.IntegerField(unique=True,null=False)
     alive = models.BooleanField()
+
+    def __str__(self):
+        return self.name
